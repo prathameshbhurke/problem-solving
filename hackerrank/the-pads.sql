@@ -8,7 +8,7 @@ SELECT * FROM (
   SELECT concat('There are total ', count(*), ' ', LOWER(occupation), 's.')
   FROM occupations
   GROUP BY occupation
-  ORDER BY COUNT(*)
+  ORDER BY COUNT(*),occupation
 ) temp2
 
  -- Someone else's answer
